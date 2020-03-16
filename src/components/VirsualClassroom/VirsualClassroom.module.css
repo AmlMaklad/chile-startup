@@ -1,0 +1,76 @@
+.right{
+    background: #283592 ;
+    background: #6d64e8 ;
+    height: 100%;
+    z-index: 5;
+    color: #FFF;    
+    position:relative;
+    transition: all 0.9s cubic-bezier(0, 0, 0.2, 1);
+}
+.right:after{
+    background:url("../assets/images/path.png") ;
+    content: ' ';
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.left{
+    position:relative;
+    height: 100%;
+    transition: all 0.9s cubic-bezier(0, 0, 0.2, 1);
+}
+.left mark{
+    color: #283592;
+}
+h1{
+    position:relative;
+    top: 30px;
+    margin: 0;
+}
+.yellow{
+    background-image: linear-gradient(120deg, #ffc10766 0%, #ffc10766 100%);
+    /* /* background-image: linear-gradient(120deg, #e01b8480 0%, #e01b8480 100%); */ 
+    background-color: #0000;
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 56%;
+    position: relative;
+    animation-delay: 1s;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    color: #FFF;
+    display: block;
+    font-size: 43px;
+}
+video{
+    transition: all .2s ease-in;
+}
+.instVideo{
+    width: 72%;
+    position: absolute;
+    right: 62px;
+    top: 23%;
+    box-shadow: 0 35px 66px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 10px; 
+}
+.videoframe{
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 35px 66px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+    left: 8%;
+    top: 23%;
+}
+.rightshift{
+    right: 8%;
+    left: auto;
+}

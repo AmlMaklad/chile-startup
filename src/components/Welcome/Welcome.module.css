@@ -1,0 +1,96 @@
+.welomeMsg{
+    max-width: 350px;
+    margin: auto;
+    display: table;
+    animation: float 2s infinite ease-in;
+}
+.left ,.right{
+    padding-top: 20%;
+}
+.right{
+    background:url("../../components/assets/images/seo3-sectionbg2.png") ;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    height: 100%;
+    /* transition: all 0.9s cubic-bezier(0, 0, 0.2, 1); */
+    /* opacity: 1; */
+}
+.left{
+    background:url("../../components/assets/images/seo3-sectionbg2.png") ;
+    background-position: left bottom;
+    background-size: cover;
+    height: 100%;
+    /* transition: all 0.9s cubic-bezier(0, 0, 0.2, 1); */
+    /* opacity: 1; */
+
+}
+.left h1{
+    font-size: 45px;
+    color: #283592;
+    text-align: center;
+    font-family: 'Baloo Tammudu', cursive;
+    font-weight: 500;
+}
+.left  p{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    max-width: 80%;
+    line-height: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+.left  p  span{
+    color: rgb(224, 27, 132);
+    font-weight: 600;
+}
+.left  p  i{
+    color: #283592;
+    font-weight: 700;
+}
+.logo{
+    width: 150px;
+    margin: 15px auto;
+    display: table;
+}
+    /* background-image: linear-gradient(120deg, #ffc10766 0%, #ffc10766 100%); */
+    /* background-image: linear-gradient(120deg, #d0098d66 0%, #df2b8c69 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 0 77%;
+    /* position: relative; */
+    /* -webkit-animation-delay: 1s; */
+    /* animation-delay: 1s; */
+    /* width: fit-content; */
+    /* margin: auto;  */
+.mouse{
+    position: absolute;
+    bottom: 20px;
+    width: 50px;
+    right: -1px;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(1rem);
+      -webkit-transform: translateY(1rem);
+    }
+  
+    100% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+    }
+  }
+  
+.slide{    
+    -webkit-transition: all 0.9s cubic-bezier(0, 0, 0.2, 1);
+    transition: all 0.9s cubic-bezier(0, 0, 0.2, 1);
+    transform:translateY(-100%);
+    opacity: 1;
+}
