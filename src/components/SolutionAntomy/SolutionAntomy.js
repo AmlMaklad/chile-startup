@@ -87,6 +87,7 @@ export const SolutionLeft = () =>{
     return(
         <React.Fragment>
            <div className={Style.left}>
+           <h1><mark>Components </mark></h1>
                <Slider {...settings}>
                 <div>
                     <h3>Virsual ClassRoom</h3>

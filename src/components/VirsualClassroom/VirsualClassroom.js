@@ -2,7 +2,6 @@ import React from "react";
 import Style from "./VirsualClassroom.module.css";
 import  attendee from "../assets/images/video.mp4";
 import  inst from "../assets/images/60frms.mp4";
-import Link from "../../components/Links/Links";
 
 
 export const AttendeeScreen = props =>{
@@ -17,7 +16,6 @@ export const AttendeeScreen = props =>{
                 <video className={videClasses} autoPlay loop>
                         <source src={attendee} type="video/mp4"></source>
                 </video>
-                <Link/>
             </div>
           </div>   
         </React.Fragment>

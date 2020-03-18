@@ -2,7 +2,7 @@ import React from "react";
 import Style from "../../containers/Main/Main.module.css";
 
 
-const Links = props =>{
+export const LinkRight = props =>{
     return(
         <React.Fragment>
             <button className={Style.btn}>
@@ -11,4 +11,5 @@ const Links = props =>{
         </React.Fragment>
     )
 }
-export default Links;
+export  const LinkLeft = props =>{
+}

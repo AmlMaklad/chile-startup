@@ -74,30 +74,12 @@ p{
     position: relative;
     height: 100vh;
   }
-  .leftContent{
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    height: 100%;
-    width: 50%;    
-    align-items: center;
-    /* overflow: hidden; */
+
+.leftContent ,.rightContent{
+    height: 100vh!important;
+    border: 0 !important;
   }
-.rightContent{
-  bottom: 0px;
-  width: 50%;
-  position: absolute;
-  right: 0px;
-	top: 0px;
-	height: 100%;
-	/* overflow: hidden; */
-}
 .sliderDots {
-  /* position: absolute;
-  right: -95%;
-  top: 40%;
-  list-style: none;
-  z-index: 40;; */
   position: absolute;
   top: 40%;
   list-style: none;
@@ -110,16 +92,9 @@ p{
   top: 40%;
   list-style: none;
   z-index: 40;
-  left: 97%;
+  right: 20px;
 }
-.slideItem{
-  height: 100%!important;
-}
-.slideItem  div{
-  height: 100%!important;
-  border: 0 !important;
-  /* overflow:visible !important; */
-}
+
 .sliderDots button:focus , .sliderDotsright button:focus  { 
   border: 0;
   outline: 0;
@@ -145,5 +120,20 @@ p{
 }
 .sliderDots .slick-current  div button{
   background: #e21685 !important;
-
 }
+.welcome{
+  background:url("../../components/assets/images/seo3-sectionbg2.png") ;
+  background-position: left bottom;
+  background-size: cover;
+  height: 100%;
+}
+.slideItem{
+  height: 100%!important;
+}
+.slideItem  div{
+  border: 0 ;
+}
+.slick-vertical .slick-slide{
+  border: 0 !important ;
+}
+
