@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Style from "./Main.module.css";
 import Grid from "@material-ui/core/Grid";
+import {LinkRight,LinkLeft} from "../../components/Links/Links";
 
 class Main extends Component{
     constructor(props){
@@ -116,7 +117,21 @@ class Main extends Component{
                                             </div>
                                         </Grid>
                                     </Grid>
-                                </section>                            
+                                </section>                
+                                <section className={Style.linkarea}>
+                                    <Grid container >
+                                            <Grid item xs={12}  md={5}>
+                                                <div  className={Style.leftContent}>
+                                                    <LinkRight    />
+                                                </div>
+                                            </Grid>
+                                            <Grid item xs={12}  md={7}>
+                                                <div  className={Style.rightContent}>
+                                                    <LinkLeft    />
+                                                </div>
+                                            </Grid>
+                                    </Grid>
+                                </section>            
                         </Slider>
                     </div>
                 </section>

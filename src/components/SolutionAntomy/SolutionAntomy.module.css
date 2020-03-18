@@ -153,12 +153,12 @@ mark{
     height: 50% !important; 
 }
 .circleVIDEO{
-    box-shadow: 0 12px 25px 0 rgba(0, 0, 0, 0.36);
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.36);
     border-radius: 50%;
     width: 400px!important;
     height: 400px!important;
     display: block;
-    margin: auto;
+    margin: 123px 135px;
 }
 
 
@@ -167,17 +167,17 @@ mark{
         top: 31px;
     }
     .tabMenu li:nth-child(2) {
-        transform: translateX(155px);
+        transform: translateX(170px);
     }
     .tabMenu li:nth-child(3){
-        transform: translateX(180px);
+        transform: translateX(192px);
     }
     .tabMenu li:last-child {
-        transform: translateX(93px);
+        transform: translateX(100px);
         margin-bottom: 0;
     }
     .circleVIDEO{
-        margin: 210px 660px;
+        margin: 205px 372px;
     }
     .circlearea div h3{
         transform: rotate(-90deg) translate(21%,225px);

@@ -12,4 +12,11 @@ export const LinkRight = props =>{
     )
 }
 export  const LinkLeft = props =>{
+    return(
+        <React.Fragment>
+            <button className={Style.btnwhite}>
+                Try Attendee Demo
+            </button>
+        </React.Fragment>
+    )
 }
