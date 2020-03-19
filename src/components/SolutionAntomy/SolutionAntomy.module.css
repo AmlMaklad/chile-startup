@@ -4,7 +4,7 @@
 }
 .right{
     position: relative;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', serif;
     transition: all 0.9s cubic-bezier(0, 0, 0.2, 1);
 }
 .tabMenu{
@@ -96,13 +96,14 @@
     padding-left: 30px;
 }
 .menuContent p{
-    max-width: 387px;
+    max-width: 410px;
     display: block;
     margin: 0;
+    text-align: justify;
 }
 .title {
     text-transform: capitalize;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', serif;
     font-size: 24px;
     line-height: 34px;
     margin-top: -8px;
@@ -141,7 +142,7 @@ mark{
     text-align: center;
     padding-top: 30px;
     display: block;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', serif;
     font-weight: 600;
 }
 .circlearea div h3{
