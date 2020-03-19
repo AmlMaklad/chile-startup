@@ -1,12 +1,12 @@
 import React from "react";
 import Style from "./SolutionAntomy.module.css";
-import  inst from "../assets/images/60frms.mp4";
+import inst from "../assets/images/60frms.mp4";
 export const SolutionRight = () =>{
     return(
         <React.Fragment>       
           <div className={Style.right}>
-                <h1><mark> Solution</mark></h1>
-                <p className={Style.mainP}>Our Storky Contain A fundamental Components that make it aperfect solution </p>
+                <h1><mark> StorkyApp Components</mark></h1>
+                <p className={Style.mainP}>StorkyApp offers four components to let instructors and learners focus on what matters</p>
                 <div  className={Style.menuConatiner}>
                     <ul className={Style.tabMenu}>
                         <li className="">
@@ -16,9 +16,9 @@ export const SolutionRight = () =>{
                                 </span>
                             </div>
                             <div className={Style.menuContent}>
-                                <h5 className={Style.title}> Virsual ClassRoom</h5>
-                                <p>                           
-                                    Lorem ipsum dolor sit amet, conse ctetue adipiscing elit, sed diam nonum nibhie.
+                                <h5 className={Style.title}>Courses Mangement System</h5>
+                                <p>
+                                    Manage courses curriculum, materials, schedules, assignmets, projects and grading books. Also you can access a recorded virtual classroom session.
                                 </p>
                             </div>
                         </li>                   
@@ -29,9 +29,9 @@ export const SolutionRight = () =>{
                                 </span>
                             </div>
                             <div className={Style.menuContent}>
-                                <h5 className={Style.title}>Course Mangement System</h5>
+                                <h5 className={Style.title}> Virtual ClassRoom</h5>
                                 <p>                           
-                                    Lorem ipsum dolor sit amet, conse ctetue adipiscing elit, sed diam nonum nibhie.
+                                    Where instructors/teachers can meet their learners, and can interact with each other and have a real classroom experience remotely.
                                 </p>
                             </div>
                         </li>                   
@@ -42,9 +42,9 @@ export const SolutionRight = () =>{
                                 </span>
                             </div>
                             <div className={Style.menuContent}>
-                                <h5 className={Style.title}>Market Place</h5>
+                                <h5 className={Style.title}>Courses Marketplace</h5>
                                 <p>                           
-                                    Lorem ipsum dolor sit amet, conse ctetue adipiscing elit, sed diam nonum nibhie.
+                                    Build landing page coding-less, get reviews after finishing each course, build reputation. Compete on StorkyApp marketplace.
                                 </p>
                             </div>
                         </li>                   
@@ -55,9 +55,9 @@ export const SolutionRight = () =>{
                                 </span>
                             </div>
                             <div className={Style.menuContent}>
-                                <h5 className={Style.title}>Handy tool</h5>
+                                <h5 className={Style.title}>Classroom Handy Tools</h5>
                                 <p>                           
-                                    Lorem ipsum dolor sit amet, conse ctetue adipiscing elit, sed diam nonum nibhie.
+                                    Free tool helps teachers to organize their classrooms, materials and learning widgets. Just with  a computer and projector, smart-board, or TV.
                                 </p>
                             </div>
                         </li>                   
@@ -73,7 +73,7 @@ export const SolutionLeft = () =>{
     return(
         <React.Fragment>
            <div className={Style.left}>
-           <h1><mark>Components </mark></h1>
+           <h1><mark>Components Visuals</mark></h1>
             <div>
                 <video className={Style.circleVIDEO} autoPlay loop>
                     <source src={inst} type="video/mp4"></source>

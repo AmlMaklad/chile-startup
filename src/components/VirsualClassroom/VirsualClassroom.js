@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./VirsualClassroom.module.css";
-import  attendee from "../assets/images/video.mp4";
-import  inst from "../assets/images/60frms.mp4";
+import  attendee from "../../assets/completed-video-att.mp4";
+import  inst from "../../assets/full-video-inst.mp4";
 
 
 export const AttendeeScreen = props =>{
@@ -13,8 +13,8 @@ export const AttendeeScreen = props =>{
                 <mark className={Style.yellow}>InstructorScreen</mark>
             </h1>
             <div >
-                <video className={videClasses} autoPlay loop>
-                        <source src={attendee} type="video/mp4"></source>
+                <video preload="auto" className={videClasses} autoPlay loop>
+                        <source src={inst} type="video/mp4"></source>
                 </video>
             </div>
           </div>   
@@ -31,8 +31,8 @@ export const InstructorScreen = props =>{
                     <mark className={Style.yellow}>Attendee Screen</mark>
                 </h1>
                 <div >
-                    <video className={videClasses} autoPlay loop>
-                        <source src={inst} type="video/mp4"></source>    
+                    <video preload="auto" className={videClasses} autoPlay loop>
+                        <source src={attendee} type="video/mp4"></source>    
                     </video>
                 </div>
           </div> 

@@ -16,7 +16,7 @@
     /* transition: all 0.9s cubic-bezier(0, 0, 0.2, 1); */
     /* opacity: 1; */
 }
-.left{
+/* .left{ */
     /* background:url("../../components/assets/images/seo3-sectionbg2.png") ;
     background-position: left bottom;
     background-size: cover;
@@ -24,7 +24,7 @@
     /* transition: all 0.9s cubic-bezier(0, 0, 0.2, 1); */
     /* opacity: 1; */
 
-}
+/* } */
 .left h1{
     font-size: 45px;
     color: #283592;
@@ -39,7 +39,8 @@
     letter-spacing: 1px;
     max-width: 80%;
     line-height: 40px;
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Poppins', serif;
 }
 .left  p  span{
     color: rgb(224, 27, 132);

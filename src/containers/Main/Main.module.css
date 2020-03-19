@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu|Poppins&display=swap');
+/* https://fonts.googleapis.com/css?family=&display=swap */
 .main{
     /* background:url("../../components/assets/images/background1.jpg"); */
     position: relative;
@@ -10,9 +11,9 @@
     font-weight: 500;
 }
 p{
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', serif;
 }
-.starsGroup {
+/* .starsGroup { */
     /* width: 4px;
     height: 4px;
     border-radius: 50%;
@@ -25,7 +26,7 @@ p{
     animation-timing-function: linear;
     animation-delay: 0s;
     z-index: 5; */
-  }
+  /* } */
   @keyframes glowing-stars {
     0% {
       opacity: 0;
