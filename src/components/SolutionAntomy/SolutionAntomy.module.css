@@ -18,20 +18,31 @@
     display: flex;
     padding: 0;
     cursor: grab;
-    margin-bottom: 75px;
+    margin-bottom: 25px;    
     list-style: none;
     height: auto!important;
     position: relative;
 }
 .tabMenu li:nth-child(2){
-    transform:translateX(132px) ;
+    transform:translateX(82px) ;
 }
 .tabMenu li:nth-child(3){
-    transform:translateX(132px) ;
+    transform:translateX(82px) ;
 }
 .tabMenu li:last-child{
-    transform:translateX(0px) ;
+    transform:translateX(17px) ;
     margin-bottom: 0;
+    z-index: 50;
+}
+.tabMenu li:last-child::after{
+    content: " ";
+    position: absolute;
+    top: 65px;
+    width: 36px;
+    height: 43px;
+    background: #fff;
+    left: -27px;
+    z-index: 33;
 }
 .tabMenu li:last-child .menuContent{
     padding-left: 40px;
@@ -39,7 +50,7 @@
 .menuConatiner{
     overflow: hidden;
     position: relative;  
-    margin: 48px 0 0 0 ;
+    margin: 24px 0 0 0 ;
     padding: 0;   
 }
 .menuConatiner::after, .menuConatiner::before {
@@ -60,11 +71,11 @@
     height: 500px !important;
 }
 .menuConatiner::before {
-    right: 77%;
+    right: 84%;
     border: 9px solid #6d64e833;
 }
 .menuConatiner::after {
-    right: calc(77% + 4px);
+    right: calc(84% + 4px);
     border: 2px dashed #6d64e8;
     animation: rotate2 2s linear infinite;
 }
@@ -72,7 +83,7 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 1px solid #6d64e8;
+    border: 1px solid #6d64e8 !important;
     width: 55px;
     height: 55px;
     box-sizing: border-box;
@@ -113,8 +124,8 @@
 .menuThumb:after {
     position: absolute;
     content: '';
-    bottom: 11%;
-    left: 0;
+    bottom: 24%;
+    left: 4px;
     background: #fff;
     width: 50px;
     height: 50px;
@@ -135,31 +146,19 @@ mark{
     margin: auto;
     color: #283592;
     display: block;
-    font-size: 43px;
+    font-size: 33px;
     font-family: 'Baloo Tammudu', cursive;
 }
-.mainP{
-    text-align: center;
-    padding-top: 30px;
-    display: block;
-    font-family: 'Poppins', serif;
-    font-weight: 600;
-}
-.circlearea div h3{
-    color :#6d64e8;
-    /* transform: rotate(-90deg) translate(-7%,225px); */
-    text-align: center;
-}
+
 .circlearea  div > div{
     height: 50% !important; 
 }
 .circleVIDEO{
     box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.36);
-    border-radius: 50%;
-    width: 400px!important;
-    height: 400px!important;
-    display: block;
-    margin: 123px 135px;
+     display: block;
+    margin: 90px 6px;
+    object-fit: contain;
+    width: 100%;
 }
 
 
@@ -168,20 +167,52 @@ mark{
         top: 31px;
     }
     .tabMenu li:nth-child(2) {
-        transform: translateX(170px);
+        transform: translateX(102px);
     }
     .tabMenu li:nth-child(3){
-        transform: translateX(192px);
+        transform: translateX(126px);
     }
     .tabMenu li:last-child {
         transform: translateX(100px);
         margin-bottom: 0;
     }
     .circleVIDEO{
-        margin: 205px 372px;
+        margin: 112px 372px;
     }
     .circlearea div h3{
         transform: rotate(-90deg) translate(21%,225px);
     }
+    .tabMenu li:last-child::after{
+        width: 56px;
+        height: 43px;
+        left: -46px;
+        top: 59px;
+    }
 
+
+}
+
+@media all and (max-width:813px){
+    .menuConatiner::after, .menuConatiner::before {
+      display: none;
+    }
+    .tabMenu li:nth-child(2) {
+        transform: translateX(0);
+    }
+    .tabMenu li:nth-child(3){
+        transform: translateX(0);
+    }
+    .tabMenu li:last-child {
+        transform: translateX(0);
+        margin-bottom: 0;
+    }
+    .menuContent p{
+        font-size: 12px;
+    }
+    .title {
+        font-size: 15px;
+    }
+    .tabMenu li{
+        margin-bottom: 15px;
+    }
 }

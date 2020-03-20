@@ -33,6 +33,13 @@ h1{
     top: 30px;
     margin: 0;
 }
+p{
+    max-width: 400px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
 .yellow{
     background-image: linear-gradient(120deg, #ffc10766 0%, #ffc10766 100%);
     /* /* background-image: linear-gradient(120deg, #e01b8480 0%, #e01b8480 100%); */ 
@@ -56,7 +63,7 @@ video{
     width: 72%;
     position: absolute;
     right: 62px;
-    top: 23%;
+    top: 29%;
     box-shadow: 0 35px 66px 0 rgba(0, 0, 0, 0.45);
     border-radius: 10px; 
 }
@@ -68,7 +75,7 @@ video{
     position: absolute;
     z-index: 10;
     left: 8%;
-    top: 23%;
+    top: 29%;
 }
 .rightshift{
     right: 8%;

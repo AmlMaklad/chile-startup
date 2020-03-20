@@ -39,30 +39,7 @@ p{
     }
   }
   
-.btn{
-    z-index: 16;
-    background-color: #e11b84;
-    cursor: pointer;
-    visibility: visible;
-    text-align: left;
-    line-height: 40px;
-    letter-spacing: 0px;
-    font-weight: 500;
-    font-size: 17px;
-    border-color: #fff0;
-    border-style: none;
-    box-shadow: rgba(208, 9, 141, 0.36) 0px 5px 25px 5px;
-    border-radius: 10px;
-    padding: 3px 40px;
-    text-decoration: none;
-    white-space: nowrap;
-    color: #fff;
-    filter: blur(0px) grayscale(0%) brightness(100%);
-    opacity: 1;
-    transform-origin: 50% 50% 0px;
-    margin:  auto;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-}
+
 .container{
     position: relative;
     height: 100vh;
@@ -105,7 +82,7 @@ p{
   border: 0;
   cursor: pointer;
 }
-.sliderDots li.slick-active button {
+.sliderDots .slick-active button {
   background: #e21685 !important;
 }
 .sliderDots .slick-current {
@@ -149,14 +126,65 @@ p{
   justify-content: center;
   align-items: center;
 }
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
 .btnwhite{
-  background-color: #ffffff;
+  background-color: #fff;
   color: #6d64e8;
-  box-shadow: 0px 5px 25px 5px rgba(255,255,255,0.36);
-  display: block;
-  padding: 15px 20px;
-  margin-bottom: 15px;
+  /* box-shadow: 0px 5px 25px 5px rgba(255,255,255,0.36); */
   border-radius: 10px;
   border: 0;
-  font-size: 17px;
+  position: absolute;
+  bottom: 42px;
+  left: 33%;
+  padding: 7px;
+  display: block;
+  mix-blend-mode: screen;
+  line-height: 0;
+  line-height: 24px;
+  padding: 14px 12px;
+  box-sizing: border-box;
+  height: 40px;
+  mix-blend-mode: screen;
+}
+.btn{
+  z-index: 16;
+  /* box-shadow: rgba(208, 9, 141, 0.36) 0px 5px 25px 5px; */
+  background-color: #e11b84;
+  color: #FFF;
+  border-radius: 10px;
+  border: 0;
+  position: absolute;
+  bottom: 42px;
+  left: 33%;
+  padding: 7px;
+  display: block;
+  mix-blend-mode: screen;
+  line-height: 24px;
+  padding: 14px 12px;
+  box-sizing: border-box;
+  height: 40px;
+  mix-blend-mode: screen;
+}
+.mainP{
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+  font-family: 'Poppins', serif;
+  font-weight: 600;
+  max-width: 600px;
+}
+
+@media all and (max-width:813px){
+  .reversesm{
+    flex-direction: column-reverse;
+  }
+  .menuConatiner::after, .menuConatiner::before {
+    display: none;
+  }
+  .mainP{
+    padding-top: 10px;
+  }
 }

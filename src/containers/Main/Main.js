@@ -7,28 +7,27 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Style from "./Main.module.css";
 import Grid from "@material-ui/core/Grid";
-import {LinkRight,LinkLeft} from "../../components/Links/Links";
 
 class Main extends Component{
     constructor(props){
         super(props);
         this.slide = this.slide.bind(this);
+        this.handleKeyDown = this.handleKeyDown.bind(this);
     }
     state = {
         nav1: null,
-        // nav3:null,
+        cursor: 0,
+        result:[],
         exchangeVideo:{
             leftvideo:1,
             rightvideo:2,
         },
     }
-    slide(y){
+    slide(y){        
         if(y > 0) {
             this.slideRight.slickPrev();
-            // this.sliderleft.slickPrev();
         }else{
             this.slideRight.slickNext();
-            // this.sliderleft.slickNext();
         }
     }
     componentWillMount(){
@@ -39,7 +38,13 @@ class Main extends Component{
             this.slide(e.wheelDelta);
         });
     }
- 
+    handleKeyDown(e) {
+        if (e.keyCode === 38) {
+            this.slideRight.slickPrev();
+        } else if(e.keyCode ===40){            
+            this.slideRight.slickNext();        
+        } 
+    }
     screenExchange = (video) =>{
         if(video === 1){
             this.setState({exchangeVideo:{ 
@@ -54,6 +59,11 @@ class Main extends Component{
 
         }
     }
+    SvgArrowHandler = () => {
+        this.slideRight.slickNext();    
+        console.log("data");    
+    }
+
     render(){
           let slickSetting={
             arrows:false,
@@ -69,18 +79,16 @@ class Main extends Component{
             speed: 500,
             cssEase: "cubic-bezier(0, 0, 0.2, 1)",
           }
-
         return(
-            <React.Fragment>
-                <section className={Style.main}>
-                    <div className={Style.container}>
-                        <Slider {...slickSetting} ref={slider => (this.slideRight = slider) }  >
-                            {/* // asNavFor={this.state.nav1} */}                                  
+                <React.Fragment>
+                    <section className={Style.main} onKeyDown={this.handleKeyDown}>
+                        <div className={Style.container}>
+                            <Slider {...slickSetting} ref={slider => (this.slideRight = slider) }  >
                                 <section  className={Style.welcome}>
                                     <Grid container >
                                         <Grid item xs={12}  md={6}>
                                             <div  className={Style.leftContent}>
-                                                <WelcomeLeft  index={0}/>
+                                                <WelcomeLeft  index={0} clickEvent={e =>{this.SvgArrowHandler()}}/>
                                             </div>
                                         </Grid>
                                         <Grid item xs={12}  md={6}>
@@ -104,39 +112,28 @@ class Main extends Component{
                                         </Grid>
                                     </Grid>
                                 </section>                            
-                                <section >
-                                    <Grid container >
-                                        <Grid item xs={12}  md={5}>
-                                            <div  className={Style.leftContent}>
-                                                <SolutionLeft />
-                                            </div>
-                                        </Grid>
-                                        <Grid item xs={12}  md={7}>
-                                            <div  className={Style.rightContent}>
-                                                <SolutionRight />
-                                            </div>
-                                        </Grid>
-                                    </Grid>
-                                </section>                
-                                <section className={Style.linkarea}>
-                                    <Grid container >
+                                <section  >
+                                    <h1><mark> StorkyApp Components</mark></h1>
+                                    <p className={Style.mainP}>StorkyApp offers four components to let instructors and learners focus on what matters</p>
+                                        <Grid container className={Style.reversesm} >
                                             <Grid item xs={12}  md={5}>
                                                 <div  className={Style.leftContent}>
-                                                    <LinkRight    />
+                                                    <SolutionLeft />
                                                 </div>
                                             </Grid>
                                             <Grid item xs={12}  md={7}>
                                                 <div  className={Style.rightContent}>
-                                                    <LinkLeft    />
+                                                    <SolutionRight />
                                                 </div>
                                             </Grid>
-                                    </Grid>
-                                </section>            
-                        </Slider>
-                    </div>
-                </section>
-            </React.Fragment>        
+                                        </Grid>
+                                    </section>                          
+                            </Slider>
+                        </div>
+                    </section>
+                </React.Fragment>      
         )
     }
 }
-export default Main;
+// withStyles(styles)
+export default (Main);

@@ -1,12 +1,10 @@
 import React from "react";
 import Style from "./SolutionAntomy.module.css";
-import inst from "../assets/images/60frms.mp4";
+import Cms from "../assets/images/cms.png";
 export const SolutionRight = () =>{
     return(
         <React.Fragment>       
-          <div className={Style.right}>
-                <h1><mark> StorkyApp Components</mark></h1>
-                <p className={Style.mainP}>StorkyApp offers four components to let instructors and learners focus on what matters</p>
+          <div className={Style.right}>               
                 <div  className={Style.menuConatiner}>
                     <ul className={Style.tabMenu}>
                         <li className="">
@@ -73,11 +71,8 @@ export const SolutionLeft = () =>{
     return(
         <React.Fragment>
            <div className={Style.left}>
-           <h1><mark>Components Visuals</mark></h1>
             <div>
-                <video className={Style.circleVIDEO} autoPlay loop>
-                    <source src={inst} type="video/mp4"></source>
-                </video> 
+                <img  src={Cms} alt="Courses Mangement System " className={Style.circleVIDEO}/>
             </div>                  
             </div>                
         </React.Fragment>

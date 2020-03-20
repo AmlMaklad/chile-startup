@@ -57,12 +57,11 @@
 }
 .mouse{
     position: absolute;
-    width: 50px;
+    width: 100px;
     left: 48%;
-    top: 15%;
+    top: 16%;
+    cursor: pointer;
 }
-
-/* animation: float 2s infinite ease-in; */
 @keyframes float {
     0% {
       transform: translateY(0);
