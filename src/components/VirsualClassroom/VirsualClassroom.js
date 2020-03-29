@@ -21,9 +21,9 @@ export const AttendeeScreen = props =>{
                         <source src={inst} type="video/mp4"></source>
                 </video>
             </div>
-            <a className={StyleMain.btnwhite} href={'https://storky.app/login?email=startupchile@storky.app&password=123456&referer=https://storky.app/conference/8/8/app'}>
+            {/* <a className={StyleMain.btnwhite} href={'https://storky.app/login?email=startupchile@storky.app&password=123456&referer=https://storky.app/conference/8/8/app'}>
                 Instructor Live Demo
-            </a>
+            </a> */}
           </div>   
         </React.Fragment>
     );
@@ -45,9 +45,9 @@ export const InstructorScreen = props =>{
                         <source src={attendee} type="video/mp4"></source>    
                     </video>
                 </div>
-                <a className={StyleMain.btn} href={'https://storky.app/login?email=startupchile_att@storky.app&password=123456&referer=https://storky.app/conference/8/8/app'}>
+                {/* <a className={StyleMain.btn} href={'https://storky.app/login?email=startupchile_att@storky.app&password=123456&referer=https://storky.app/conference/8/8/app'}>
                     Attendee Live Demo
-                </a>
+                </a> */}
           </div> 
         </React.Fragment>
     );
