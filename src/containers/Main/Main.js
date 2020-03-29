@@ -37,6 +37,9 @@ class Main extends Component{
         window.addEventListener('wheel', (e) => {
             this.slide(e.wheelDelta);
         });
+        window.addEventListener('scroll', (e) => {
+            this.slide(e.wheelDelta);
+        });
     }
     handleKeyDown(e) {
         if (e.keyCode === 38) {
@@ -71,18 +74,22 @@ class Main extends Component{
             slidesToShow: 1,
             slidesToScroll: 1,
             vertical:true,
+            verticalSwiping: true,
+            // swipeToSlide: true,
             slickPrev: " ",
             slickNext:' ',
             dots: true,
+            touchMove:true,
             dotsClass:Style.sliderDotsright,
             className:Style.slideItem  ,
             speed: 500,
+            // swipe:true,
             // cssEase: "cubic-bezier(0, 0, 0.2, 1)",
             useCss: "transition: left 0.9s cubic-bezier(0, 0, 0.2, 1);",
           }
         return(
                 <React.Fragment>
-                    <section className={Style.main} onKeyDown={this.handleKeyDown}>
+                    <section className={Style.main} onKeyDown={this.handleKeyDown} >
                         <div className={Style.container}>
                             <Slider {...slickSetting} ref={slider => (this.slideRight = slider) }  >
                                 <section  className={Style.welcome}>
