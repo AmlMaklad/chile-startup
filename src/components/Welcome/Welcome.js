@@ -1,5 +1,6 @@
 import React from "react";
-import welcomeImg from "../assets/images/welcome.png";
+// import welcomeImg from "../assets/images/welcome.png";
+import welcomeImg from "../assets/images/welcome2.png";
 import Style from "./Welcome.module.css";
 import Logo from "../assets/images/storkyLogo.png";
 import arrow from "../assets/images/arrow.png";
@@ -18,9 +19,11 @@ export const WelcomeLeft = (props) =>{
 	return(
 		<React.Fragment>
 					<div className={Style.left}>
-					<h1>Welcome Startup Chile</h1>
+					{/* <h1>Welcome Startup Chile</h1> */}
+					<h1>Welcome Wild Card Hackathon </h1>
+					{/* <span>Hola</span> */}
 					<p> 
-						<span>Hola</span> , Welcome to 3 minutes StorkyApp tour, here you will find a <strong>Demo video, Live Demo Links, Anatomy of StorkyApp Components</strong> and quick illustration of the next steps <br/>
+						<span>Hello ,</span> , Welcome to 3 minutes StorkyApp tour, here you will find a <strong>Demo video, Live Demo Links, Anatomy of StorkyApp Components</strong> and quick illustration of the next steps <br/>
 							<i>Scroll Down To start your tour</i>
 						<img  src={Logo} alt = "StorkyAapp" className={Style.logo} />
 					</p> 

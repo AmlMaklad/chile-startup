@@ -1,6 +1,6 @@
 import React from "react";
 import Style from "./SolutionAntomy.module.css";
-import Cms from "../assets/images/cms.png";
+import Cms from "../assets/images/LMS.gif";
 export const SolutionRight = () =>{
     return(
         <React.Fragment>       

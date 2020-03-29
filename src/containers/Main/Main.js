@@ -77,7 +77,8 @@ class Main extends Component{
             dotsClass:Style.sliderDotsright,
             className:Style.slideItem  ,
             speed: 500,
-            cssEase: "cubic-bezier(0, 0, 0.2, 1)",
+            // cssEase: "cubic-bezier(0, 0, 0.2, 1)",
+            useCss: "transition: left 0.9s cubic-bezier(0, 0, 0.2, 1);",
           }
         return(
                 <React.Fragment>
